@@ -1,12 +1,31 @@
-﻿<Window x:Class="MemoryCards.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MemoryCards"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="MemoryCards.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MemoryCards"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="MemoryCards">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+    <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
+        <TextBox PlaceholderText="Felhasználónév"></TextBox>
+            <PasswordBox PlaceholderText="Jelszó"/>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                <Button x:Name="login_BTN" Content="Bejelentkezés" Click="login_BTN_Click"/>
+                <Button x:Name="Registration_BTN" Content="Regisztráció" Click="Registration_BTN_Click"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
