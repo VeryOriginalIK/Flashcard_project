@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MemoryCards (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MemoryCards (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
