@@ -47,6 +47,9 @@ jobs:
       env:
         Configuration: ${{ matrix.configuration }}
 
+    - name: Create required directories
+      run: mkdir -p D:\a\Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package
+
     - name: Decode the pfx
       run: |
         $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
