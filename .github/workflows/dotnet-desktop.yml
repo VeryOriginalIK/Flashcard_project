@@ -39,11 +39,6 @@ jobs:
     - name: Restore NuGet packages
       run: dotnet restore MemoryCards\MemoryCards.sln
 
-    - name: Install WpfUI and BCrypt.net
-      run: |
-        dotnet add package WpfUI --version 1.0.0  # Replace with the required version
-        dotnet add package BCrypt.Net-Next --version 4.0.2  # Replace with the required version
-
     - name: Execute unit tests
       run: dotnet test
 
