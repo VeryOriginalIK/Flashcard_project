@@ -9,26 +9,24 @@ namespace MemoryCards
 {
     class User
     {
-        public int id { get; private set; }
         private string password;
         public string name { get; private set; }
         public List<int> cardIds { get; set; }
         public int points { get; set; }
 
-        public User(int id, string name, string password, int points)
+        public User(string name, string password)
         {
-            this.id = id;
             this.name = name;
             this.password = (passwordEncryption.Encrypt(password));
             this.cardIds = new List<int> {};
-            this.points = points;
+            this.points = 0;
         }
 
-        public List<int>? Login(string password)
+        public User? Login(string password)
         {
             if (passwordEncryption.Decrypt(password, this.password))
             {
-                return this.cardIds;
+                return this;
             }
             else
             {

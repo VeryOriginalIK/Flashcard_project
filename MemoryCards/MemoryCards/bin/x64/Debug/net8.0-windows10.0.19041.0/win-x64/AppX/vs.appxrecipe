@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-14T12:55:33.865</Modified>
+      <Modified>2025-04-19T12:08:20.824</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-14T12:55:33.565</Modified>
+      <Modified>2025-04-19T12:08:20.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.runtimeconfig.json">
       <PackagePath>MemoryCards.runtimeconfig.json</PackagePath>
-      <Modified>2025-04-14T12:55:33.310</Modified>
+      <Modified>2025-04-19T11:49:45.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.dll">
       <PackagePath>MemoryCards.dll</PackagePath>
-      <Modified>2025-04-14T12:55:32.347</Modified>
+      <Modified>2025-04-19T12:08:18.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>MemoryCards.exe</PackagePath>
-      <Modified>2025-04-14T12:55:32.371</Modified>
+      <Modified>2025-04-19T12:08:19.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.15\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -891,7 +891,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.deps.json">
       <PackagePath>MemoryCards.deps.json</PackagePath>
-      <Modified>2025-04-14T12:55:33.158</Modified>
+      <Modified>2025-04-19T12:08:20.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

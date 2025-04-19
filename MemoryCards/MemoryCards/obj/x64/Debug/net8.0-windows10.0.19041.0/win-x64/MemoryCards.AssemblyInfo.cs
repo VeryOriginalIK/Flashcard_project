@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MemoryCards")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1eeef8b2c6bb0b2fadb9f0df3bf4af236416c98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52505006a2fcd42203a8a902b14f26191652df75")]
 [assembly: System.Reflection.AssemblyProductAttribute("MemoryCards")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MemoryCards")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

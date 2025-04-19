@@ -1,8 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/Flashcard_project/CopilotIndices/17.13.444.19527
-/MemoryCards/MemoryCards/obj/Debug
-/.vs
-/MemoryCards/.vs
