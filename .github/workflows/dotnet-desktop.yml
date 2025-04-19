@@ -40,7 +40,7 @@ jobs:
       run: dotnet restore MemoryCards\MemoryCards.sln
 
     - name: Execute unit tests
-      run: dotnet test
+      run: dotnet test $env:Solution_Name
 
     - name: Restore the application
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
