@@ -17,10 +17,10 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: MemoryCards\MemoryCards.sln                         # Updated with your solution name.
-      Test_Project_Path: MemoryCards\MemoryCards.Tests\MemoryCards.Tests.csproj  # Replace with the actual test project path if different.
-      Wap_Project_Directory: MemoryCards\MemoryCards.Package             # Updated with your WAP project directory.
-      Wap_Project_Path: MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj  # Updated with your WAP project path.
+      Solution_Name: MemoryCards\MemoryCards.sln
+      Test_Project_Path: MemoryCards\MemoryCards.Tests\MemoryCards.Tests.csproj
+      Wap_Project_Directory: ${{ github.workspace }}\MemoryCards\MemoryCards.Package
+      Wap_Project_Path: ${{ github.workspace }}\MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj
 
     steps:
     - name: Checkout
@@ -36,8 +36,17 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v2
 
+    - name: Debug - List project files
+      run: |
+        echo "Current directory:"
+        pwd
+        echo "Contents of MemoryCards:"
+        dir MemoryCards
+        echo "Contents of MemoryCards.Package:"
+        dir MemoryCards\MemoryCards.Package
+
     - name: Restore NuGet packages
-      run: dotnet restore MemoryCards\MemoryCards.sln
+      run: dotnet restore $env:Solution_Name
 
     - name: Execute unit tests
       run: dotnet test $env:Solution_Name
@@ -46,9 +55,6 @@ jobs:
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
-
-    - name: Create required directories
-      run: mkdir -p D:\a\Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package
 
     - name: Decode the pfx
       run: |
@@ -65,7 +71,7 @@ jobs:
         Configuration: ${{ matrix.configuration }}
 
     - name: Remove the pfx
-      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+      run: Remove-Item -path "$env:Wap_Project_Directory\GitHubActionsWorkflow.pfx"
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
