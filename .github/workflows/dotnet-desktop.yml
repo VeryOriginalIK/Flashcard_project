@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: MemoryCards.sln                         # Updated with your solution name.
+      Solution_Name: MemoryCards\MemoryCards.sln                         # Updated with your solution name.
       Test_Project_Path: MemoryCards\MemoryCards.Tests\MemoryCards.Tests.csproj  # Replace with the actual test project path if different.
       Wap_Project_Directory: MemoryCards\MemoryCards.Package             # Updated with your WAP project directory.
       Wap_Project_Path: MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj  # Updated with your WAP project path.
