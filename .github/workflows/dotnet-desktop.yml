@@ -19,8 +19,8 @@ jobs:
     env:
       Solution_Name: MemoryCards\MemoryCards.sln
       Test_Project_Path: MemoryCards\MemoryCards.Tests\MemoryCards.Tests.csproj
-      Wap_Project_Directory: ${{ github.workspace }}\MemoryCards\MemoryCards.Package
-      Wap_Project_Path: ${{ github.workspace }}\MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj
+      Wap_Project_Directory: Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package
+      Wap_Project_Path: Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj
 
     steps:
     - name: Checkout
