@@ -17,10 +17,10 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: MemoryCards\MemoryCards.sln
-      Test_Project_Path: MemoryCards\MemoryCards.Tests\MemoryCards.Tests.csproj
-      Wap_Project_Directory: Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package
-      Wap_Project_Path: Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj
+      Solution_Name: MemoryCards\MemoryCards.sln                         # Updated with your solution name.
+      Test_Project_Path: MemoryCards\MemoryCards.Tests\MemoryCards.Tests.csproj  # Replace with the actual test project path if different.
+      Wap_Project_Directory: MemoryCards\MemoryCards.Package             # Updated with your WAP project directory.
+      Wap_Project_Path: MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj  # Updated with your WAP project path.
 
     steps:
     - name: Checkout
@@ -36,17 +36,8 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v2
 
-    - name: Debug - List project files
-      run: |
-        echo "Current directory:"
-        pwd
-        echo "Contents of MemoryCards:"
-        dir MemoryCards
-        echo "Contents of MemoryCards.Package:"
-        dir MemoryCards\MemoryCards.Package
-
     - name: Restore NuGet packages
-      run: dotnet restore $env:Solution_Name
+      run: dotnet restore MemoryCards\MemoryCards.sln
 
     - name: Execute unit tests
       run: dotnet test $env:Solution_Name
@@ -55,6 +46,9 @@ jobs:
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
+
+    - name: Create required directories
+      run: mkdir -p D:\a\Flashcard_project\Flashcard_project\MemoryCards\MemoryCards.Package
 
     - name: Decode the pfx
       run: |
@@ -71,10 +65,17 @@ jobs:
         Configuration: ${{ matrix.configuration }}
 
     - name: Remove the pfx
-      run: Remove-Item -path "$env:Wap_Project_Directory\GitHubActionsWorkflow.pfx"
+      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
+
+Run msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=
+  
+MSBuild version 17.13.15+18b3035f6 for .NET Framework
+MSBUILD : error MSB1009: Project file does not exist.
+Switch: MemoryCards\MemoryCards.Package\MemoryCards.Package.wapproj
+Error: Process completed with exit code 1.
