@@ -19,13 +19,14 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
     <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
-        <TextBox PlaceholderText="Felhasználónév"></TextBox>
-            <PasswordBox PlaceholderText="Jelszó"/>
-    </StackPanel>
-    <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
-                <Button x:ConnectionId='2' x:Name="login_BTN" Content="Bejelentkezés"                        />
-                <Button x:ConnectionId='3' x:Name="Registration_BTN" Content="Regisztráció"                               />
+        <TextBox x:ConnectionId='2' x:Name="Usrnm" PlaceholderText="Felhasználónév"></TextBox>
+            <PasswordBox x:ConnectionId='3' x:Name="Pswrd" PlaceholderText="Jelszó"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                    <Button x:ConnectionId='4' x:Name="login_BTN" Content="Bejelentkezés"                        />
+                    <Button x:ConnectionId='5' x:Name="Registration_BTN" Content="Regisztráció"                               />
+                </StackPanel>
             </StackPanel>
+    
         </Grid>
     </Grid>
 </Window>

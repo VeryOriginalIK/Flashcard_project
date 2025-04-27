@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-19T12:08:20.824</Modified>
+      <Modified>2025-04-27T12:30:11.693</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-19T12:08:20.486</Modified>
+      <Modified>2025-04-27T11:43:41.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.runtimeconfig.json">
       <PackagePath>MemoryCards.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.dll">
       <PackagePath>MemoryCards.dll</PackagePath>
-      <Modified>2025-04-19T12:08:18.881</Modified>
+      <Modified>2025-04-27T12:30:11.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>MemoryCards.exe</PackagePath>
-      <Modified>2025-04-19T12:08:19.006</Modified>
+      <Modified>2025-04-27T12:30:11.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.15\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

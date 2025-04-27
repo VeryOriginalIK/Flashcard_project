@@ -1,6 +1,9 @@
 using Microsoft.UI.Xaml;
+using System;
+using Microsoft.UI.Xaml.Controls;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 
 namespace MemoryCards
 {
@@ -17,15 +20,22 @@ namespace MemoryCards
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public ObservableCollection<Card>? Users { get; set; } = new ObservableCollection<Card>();
-        public Card SelectedUser { get; set; }
+        public ObservableCollection<User>? Users { get; set; } = new ObservableCollection<User>();
+        public User SelectedUser { get; set; }
 
-        private ObservableCollection<Card> usersToShow;
+        private ObservableCollection<User> usersToShow;
 
-        public ObservableCollection<Card> UsersToShow
+        public ObservableCollection<User> UsersToShow
         {
             get { return usersToShow; }
             set { usersToShow = value; OnPropertyChanged(nameof(UsersToShow)); }
+        }
+
+        private void Study()
+        {
+            StudyMode studyMode = new StudyMode();
+            studyMode.Show();
+            this.Close();
         }
 
         public MainWindow()
@@ -35,11 +45,36 @@ namespace MemoryCards
 
         private void login_BTN_Click(object sender, RoutedEventArgs e)
         {
-
+            ContentDialog newUserDialog = new ContentDialog
+            {
+                Title = "A felhasználónév foglalt",
+                Content = "Kérem, válasszon másikat!",
+                PrimaryButtonText = "Tanulás",
+                PrimaryButtonCommand = Study,
+                CloseButtonText = "Ok",
+                XamlRoot = this.Content.XamlRoot
+            };
+            _ = newUserDialog.ShowAsync();
         }
         private void Registration_BTN_Click(object sender, RoutedEventArgs e)
         {
-
+            User newUser = new User(Usrnm.Text.ToString(), Pswrd.ToString());
+            if (!Users.Any(x => x.name.ToLower() == Usrnm.Text.ToString().ToLower()))
+            {
+                Users.Add(newUser);
+                login_BTN_Click(sender, e);
+            }
+            else
+            {
+                ContentDialog userTakenDialog = new ContentDialog
+                {
+                    Title = "A felhasználónév foglalt",
+                    Content = "Kérem, válasszon másikat!",
+                    CloseButtonText = "Ok",
+                    XamlRoot = this.Content.XamlRoot
+                };
+                _ = userTakenDialog.ShowAsync();
+            }
         }
+    } 
     }
-}

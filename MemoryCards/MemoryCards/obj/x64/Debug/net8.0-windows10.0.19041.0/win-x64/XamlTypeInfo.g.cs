@@ -226,43 +226,51 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[17];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
             _typeNameTable[4] = "MemoryCards.MainWindow";
             _typeNameTable[5] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[6] = "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>";
-            _typeNameTable[7] = "System.Collections.ObjectModel.Collection`1<MemoryCards.Card>";
-            _typeNameTable[8] = "MemoryCards.Card";
-            _typeNameTable[9] = "Int32";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "System.DateTime";
-            _typeNameTable[12] = "System.ValueType";
-            _typeNameTable[13] = "MemoryCards.StudyMode";
-            _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[15] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[16] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[6] = "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.User>";
+            _typeNameTable[7] = "System.Collections.ObjectModel.Collection`1<MemoryCards.User>";
+            _typeNameTable[8] = "MemoryCards.User";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "System.Collections.Generic.List`1<Int32>";
+            _typeNameTable[11] = "Int32";
+            _typeNameTable[12] = "MemoryCards.StudyMode";
+            _typeNameTable[13] = "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>";
+            _typeNameTable[14] = "System.Collections.ObjectModel.Collection`1<MemoryCards.Card>";
+            _typeNameTable[15] = "MemoryCards.Card";
+            _typeNameTable[16] = "System.DateTime";
+            _typeNameTable[17] = "System.ValueType";
+            _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[19] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[20] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[17];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
             _typeTable[4] = typeof(global::MemoryCards.MainWindow);
             _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[6] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>);
-            _typeTable[7] = typeof(global::System.Collections.ObjectModel.Collection<global::MemoryCards.Card>);
-            _typeTable[8] = typeof(global::MemoryCards.Card);
-            _typeTable[9] = typeof(global::System.Int32);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::System.DateTime);
-            _typeTable[12] = typeof(global::System.ValueType);
-            _typeTable[13] = typeof(global::MemoryCards.StudyMode);
-            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[16] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[6] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.User>);
+            _typeTable[7] = typeof(global::System.Collections.ObjectModel.Collection<global::MemoryCards.User>);
+            _typeTable[8] = typeof(global::MemoryCards.User);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::System.Collections.Generic.List<global::System.Int32>);
+            _typeTable[11] = typeof(global::System.Int32);
+            _typeTable[12] = typeof(global::MemoryCards.StudyMode);
+            _typeTable[13] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>);
+            _typeTable[14] = typeof(global::System.Collections.ObjectModel.Collection<global::MemoryCards.Card>);
+            _typeTable[15] = typeof(global::MemoryCards.Card);
+            _typeTable[16] = typeof(global::System.DateTime);
+            _typeTable[17] = typeof(global::System.ValueType);
+            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[20] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -299,20 +307,27 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_MainWindow() { return new global::MemoryCards.MainWindow(); }
-        private object Activate_6_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>(); }
-        private object Activate_7_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MemoryCards.Card>(); }
-        private object Activate_13_StudyMode() { return new global::MemoryCards.StudyMode(); }
-        private object Activate_14_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_6_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.User>(); }
+        private object Activate_7_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MemoryCards.User>(); }
+        private object Activate_10_List() { return new global::System.Collections.Generic.List<global::System.Int32>(); }
+        private object Activate_12_StudyMode() { return new global::MemoryCards.StudyMode(); }
+        private object Activate_13_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>(); }
+        private object Activate_14_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MemoryCards.Card>(); }
+        private object Activate_18_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::MemoryCards.MainWindow).TypeHandle);
-        private void StaticInitializer_6_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>).TypeHandle);
-        private void StaticInitializer_7_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::MemoryCards.Card>).TypeHandle);
-        private void StaticInitializer_8_Card() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::MemoryCards.Card).TypeHandle);
-        private void StaticInitializer_11_DateTime() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.DateTime).TypeHandle);
-        private void StaticInitializer_12_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
-        private void StaticInitializer_13_StudyMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::MemoryCards.StudyMode).TypeHandle);
-        private void StaticInitializer_14_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_16_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_6_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.User>).TypeHandle);
+        private void StaticInitializer_7_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::MemoryCards.User>).TypeHandle);
+        private void StaticInitializer_8_User() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::MemoryCards.User).TypeHandle);
+        private void StaticInitializer_10_List() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.List<global::System.Int32>).TypeHandle);
+        private void StaticInitializer_12_StudyMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::MemoryCards.StudyMode).TypeHandle);
+        private void StaticInitializer_13_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>).TypeHandle);
+        private void StaticInitializer_14_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::MemoryCards.Card>).TypeHandle);
+        private void StaticInitializer_15_Card() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::MemoryCards.Card).TypeHandle);
+        private void StaticInitializer_16_DateTime() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.DateTime).TypeHandle);
+        private void StaticInitializer_17_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
+        private void StaticInitializer_18_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_20_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -322,17 +337,35 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
         }
         private void VectorAdd_6_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::MemoryCards.Card>)instance;
-            var newItem = (global::MemoryCards.Card)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::MemoryCards.User>)instance;
+            var newItem = (global::MemoryCards.User)item;
             collection.Add(newItem);
         }
         private void VectorAdd_7_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::MemoryCards.User>)instance;
+            var newItem = (global::MemoryCards.User)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_10_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Int32>)instance;
+            var newItem = (global::System.Int32)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_13_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MemoryCards.Card>)instance;
             var newItem = (global::MemoryCards.Card)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_16_IList(object instance, object item)
+        private void VectorAdd_14_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::MemoryCards.Card>)instance;
+            var newItem = (global::MemoryCards.Card)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_20_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -385,15 +418,15 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
                 xamlType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>
-                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MemoryCards.Card>"));
+            case 6:   //  System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.User>
+                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MemoryCards.User>"));
                 userType.StaticInitializer = StaticInitializer_6_ObservableCollection;
                 userType.CollectionAdd = VectorAdd_6_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 7:   //  System.Collections.ObjectModel.Collection`1<MemoryCards.Card>
+            case 7:   //  System.Collections.ObjectModel.Collection`1<MemoryCards.User>
                 userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_7_Collection;
                 userType.StaticInitializer = StaticInitializer_7_Collection;
@@ -401,9 +434,62 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 8:   //  MemoryCards.Card
+            case 8:   //  MemoryCards.User
                 userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_8_Card;
+                userType.StaticInitializer = StaticInitializer_8_User;
+                userType.AddMemberName("name");
+                userType.AddMemberName("cardIds");
+                userType.AddMemberName("points");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  String
+                xamlType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  System.Collections.Generic.List`1<Int32>
+                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_10_List;
+                userType.CollectionAdd = VectorAdd_10_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Int32
+                xamlType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  MemoryCards.StudyMode
+                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
+                userType.Activator = Activate_12_StudyMode;
+                userType.StaticInitializer = StaticInitializer_12_StudyMode;
+                userType.AddMemberName("Card");
+                userType.AddMemberName("SelectedCard");
+                userType.AddMemberName("CardsToShow");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>
+                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MemoryCards.Card>"));
+                userType.StaticInitializer = StaticInitializer_13_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_13_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 14:   //  System.Collections.ObjectModel.Collection`1<MemoryCards.Card>
+                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_14_Collection;
+                userType.StaticInitializer = StaticInitializer_14_Collection;
+                userType.CollectionAdd = VectorAdd_14_Collection;
+                xamlType = userType;
+                break;
+
+            case 15:   //  MemoryCards.Card
+                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.StaticInitializer = StaticInitializer_15_Card;
                 userType.AddMemberName("id");
                 userType.AddMemberName("content");
                 userType.AddMemberName("lastRead");
@@ -413,42 +499,23 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Int32
-                xamlType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  String
-                xamlType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  System.DateTime
+            case 16:   //  System.DateTime
                 userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_11_DateTime;
+                userType.StaticInitializer = StaticInitializer_16_DateTime;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.ValueType
+            case 17:   //  System.ValueType
                 userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_12_ValueType;
+                userType.StaticInitializer = StaticInitializer_17_ValueType;
                 xamlType = userType;
                 break;
 
-            case 13:   //  MemoryCards.StudyMode
-                userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_13_StudyMode;
-                userType.StaticInitializer = StaticInitializer_13_StudyMode;
-                userType.AddMemberName("Users");
-                userType.AddMemberName("SelectedUser");
-                userType.AddMemberName("UsersToShow");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 18:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_14_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_14_TreeViewNode;
+                userType.Activator = Activate_18_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_18_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -460,14 +527,14 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.UI.Xaml.DependencyObject
+            case 19:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 20:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_16_IList;
-                userType.CollectionAdd = VectorAdd_16_IList;
+                userType.StaticInitializer = StaticInitializer_20_IList;
+                userType.CollectionAdd = VectorAdd_20_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -548,139 +615,164 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
         private void set_1_MainWindow_Users(object instance, object Value)
         {
             var that = (global::MemoryCards.MainWindow)instance;
-            that.Users = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>)Value;
+            that.Users = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.User>)Value;
         }
-        private object get_2_Card_id(object instance)
+        private object get_2_User_name(object instance)
+        {
+            var that = (global::MemoryCards.User)instance;
+            return that.name;
+        }
+        private object get_3_User_cardIds(object instance)
+        {
+            var that = (global::MemoryCards.User)instance;
+            return that.cardIds;
+        }
+        private void set_3_User_cardIds(object instance, object Value)
+        {
+            var that = (global::MemoryCards.User)instance;
+            that.cardIds = (global::System.Collections.Generic.List<global::System.Int32>)Value;
+        }
+        private object get_4_User_points(object instance)
+        {
+            var that = (global::MemoryCards.User)instance;
+            return that.points;
+        }
+        private void set_4_User_points(object instance, object Value)
+        {
+            var that = (global::MemoryCards.User)instance;
+            that.points = (global::System.Int32)Value;
+        }
+        private object get_5_MainWindow_SelectedUser(object instance)
+        {
+            var that = (global::MemoryCards.MainWindow)instance;
+            return that.SelectedUser;
+        }
+        private void set_5_MainWindow_SelectedUser(object instance, object Value)
+        {
+            var that = (global::MemoryCards.MainWindow)instance;
+            that.SelectedUser = (global::MemoryCards.User)Value;
+        }
+        private object get_6_MainWindow_UsersToShow(object instance)
+        {
+            var that = (global::MemoryCards.MainWindow)instance;
+            return that.UsersToShow;
+        }
+        private void set_6_MainWindow_UsersToShow(object instance, object Value)
+        {
+            var that = (global::MemoryCards.MainWindow)instance;
+            that.UsersToShow = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.User>)Value;
+        }
+        private object get_7_StudyMode_Card(object instance)
+        {
+            var that = (global::MemoryCards.StudyMode)instance;
+            return that.Card;
+        }
+        private void set_7_StudyMode_Card(object instance, object Value)
+        {
+            var that = (global::MemoryCards.StudyMode)instance;
+            that.Card = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>)Value;
+        }
+        private object get_8_Card_id(object instance)
         {
             var that = (global::MemoryCards.Card)instance;
             return that.id;
         }
-        private object get_3_Card_content(object instance)
+        private object get_9_Card_content(object instance)
         {
             var that = (global::MemoryCards.Card)instance;
             return that.content;
         }
-        private object get_4_Card_lastRead(object instance)
+        private object get_10_Card_lastRead(object instance)
         {
             var that = (global::MemoryCards.Card)instance;
             return that.lastRead;
         }
-        private void set_4_Card_lastRead(object instance, object Value)
+        private void set_10_Card_lastRead(object instance, object Value)
         {
             var that = (global::MemoryCards.Card)instance;
             that.lastRead = (global::System.DateTime)Value;
         }
-        private object get_5_Card_timesRead(object instance)
+        private object get_11_Card_timesRead(object instance)
         {
             var that = (global::MemoryCards.Card)instance;
             return that.timesRead;
         }
-        private void set_5_Card_timesRead(object instance, object Value)
+        private void set_11_Card_timesRead(object instance, object Value)
         {
             var that = (global::MemoryCards.Card)instance;
             that.timesRead = (global::System.Int32)Value;
         }
-        private object get_6_Card_answer(object instance)
+        private object get_12_Card_answer(object instance)
         {
             var that = (global::MemoryCards.Card)instance;
             return that.answer;
         }
-        private object get_7_MainWindow_SelectedUser(object instance)
-        {
-            var that = (global::MemoryCards.MainWindow)instance;
-            return that.SelectedUser;
-        }
-        private void set_7_MainWindow_SelectedUser(object instance, object Value)
-        {
-            var that = (global::MemoryCards.MainWindow)instance;
-            that.SelectedUser = (global::MemoryCards.Card)Value;
-        }
-        private object get_8_MainWindow_UsersToShow(object instance)
-        {
-            var that = (global::MemoryCards.MainWindow)instance;
-            return that.UsersToShow;
-        }
-        private void set_8_MainWindow_UsersToShow(object instance, object Value)
-        {
-            var that = (global::MemoryCards.MainWindow)instance;
-            that.UsersToShow = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>)Value;
-        }
-        private object get_9_StudyMode_Users(object instance)
+        private object get_13_StudyMode_SelectedCard(object instance)
         {
             var that = (global::MemoryCards.StudyMode)instance;
-            return that.Users;
+            return that.SelectedCard;
         }
-        private void set_9_StudyMode_Users(object instance, object Value)
+        private void set_13_StudyMode_SelectedCard(object instance, object Value)
         {
             var that = (global::MemoryCards.StudyMode)instance;
-            that.Users = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>)Value;
+            that.SelectedCard = (global::MemoryCards.Card)Value;
         }
-        private object get_10_StudyMode_SelectedUser(object instance)
+        private object get_14_StudyMode_CardsToShow(object instance)
         {
             var that = (global::MemoryCards.StudyMode)instance;
-            return that.SelectedUser;
+            return that.CardsToShow;
         }
-        private void set_10_StudyMode_SelectedUser(object instance, object Value)
+        private void set_14_StudyMode_CardsToShow(object instance, object Value)
         {
             var that = (global::MemoryCards.StudyMode)instance;
-            that.SelectedUser = (global::MemoryCards.Card)Value;
+            that.CardsToShow = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>)Value;
         }
-        private object get_11_StudyMode_UsersToShow(object instance)
-        {
-            var that = (global::MemoryCards.StudyMode)instance;
-            return that.UsersToShow;
-        }
-        private void set_11_StudyMode_UsersToShow(object instance, object Value)
-        {
-            var that = (global::MemoryCards.StudyMode)instance;
-            that.UsersToShow = (global::System.Collections.ObjectModel.ObservableCollection<global::MemoryCards.Card>)Value;
-        }
-        private object get_12_TreeViewNode_Children(object instance)
+        private object get_15_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_13_TreeViewNode_Content(object instance)
+        private object get_16_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_13_TreeViewNode_Content(object instance, object Value)
+        private void set_16_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_14_TreeViewNode_Depth(object instance)
+        private object get_17_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_15_TreeViewNode_HasChildren(object instance)
+        private object get_18_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_16_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_19_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_16_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_19_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_17_TreeViewNode_IsExpanded(object instance)
+        private object get_20_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_17_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_20_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_18_TreeViewNode_Parent(object instance)
+        private object get_21_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -702,114 +794,132 @@ namespace MemoryCards.MemoryCards_XamlTypeInfo
                 break;
             case "MemoryCards.MainWindow.Users":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.MainWindow");
-                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Users", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Users", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.User>");
                 xamlMember.Getter = get_1_MainWindow_Users;
                 xamlMember.Setter = set_1_MainWindow_Users;
+                break;
+            case "MemoryCards.User.name":
+                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.User");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "name", "String");
+                xamlMember.Getter = get_2_User_name;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MemoryCards.User.cardIds":
+                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.User");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "cardIds", "System.Collections.Generic.List`1<Int32>");
+                xamlMember.Getter = get_3_User_cardIds;
+                xamlMember.Setter = set_3_User_cardIds;
+                break;
+            case "MemoryCards.User.points":
+                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.User");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "points", "Int32");
+                xamlMember.Getter = get_4_User_points;
+                xamlMember.Setter = set_4_User_points;
+                break;
+            case "MemoryCards.MainWindow.SelectedUser":
+                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.MainWindow");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "SelectedUser", "MemoryCards.User");
+                xamlMember.Getter = get_5_MainWindow_SelectedUser;
+                xamlMember.Setter = set_5_MainWindow_SelectedUser;
+                break;
+            case "MemoryCards.MainWindow.UsersToShow":
+                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.MainWindow");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "UsersToShow", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.User>");
+                xamlMember.Getter = get_6_MainWindow_UsersToShow;
+                xamlMember.Setter = set_6_MainWindow_UsersToShow;
+                break;
+            case "MemoryCards.StudyMode.Card":
+                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.StudyMode");
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Card", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>");
+                xamlMember.Getter = get_7_StudyMode_Card;
+                xamlMember.Setter = set_7_StudyMode_Card;
                 break;
             case "MemoryCards.Card.id":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.Card");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "id", "Int32");
-                xamlMember.Getter = get_2_Card_id;
+                xamlMember.Getter = get_8_Card_id;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MemoryCards.Card.content":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.Card");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "content", "String");
-                xamlMember.Getter = get_3_Card_content;
+                xamlMember.Getter = get_9_Card_content;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MemoryCards.Card.lastRead":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.Card");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "lastRead", "System.DateTime");
-                xamlMember.Getter = get_4_Card_lastRead;
-                xamlMember.Setter = set_4_Card_lastRead;
+                xamlMember.Getter = get_10_Card_lastRead;
+                xamlMember.Setter = set_10_Card_lastRead;
                 break;
             case "MemoryCards.Card.timesRead":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.Card");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "timesRead", "Int32");
-                xamlMember.Getter = get_5_Card_timesRead;
-                xamlMember.Setter = set_5_Card_timesRead;
+                xamlMember.Getter = get_11_Card_timesRead;
+                xamlMember.Setter = set_11_Card_timesRead;
                 break;
             case "MemoryCards.Card.answer":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.Card");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "answer", "String");
-                xamlMember.Getter = get_6_Card_answer;
+                xamlMember.Getter = get_12_Card_answer;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MemoryCards.MainWindow.SelectedUser":
-                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.MainWindow");
-                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "SelectedUser", "MemoryCards.Card");
-                xamlMember.Getter = get_7_MainWindow_SelectedUser;
-                xamlMember.Setter = set_7_MainWindow_SelectedUser;
-                break;
-            case "MemoryCards.MainWindow.UsersToShow":
-                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.MainWindow");
-                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "UsersToShow", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>");
-                xamlMember.Getter = get_8_MainWindow_UsersToShow;
-                xamlMember.Setter = set_8_MainWindow_UsersToShow;
-                break;
-            case "MemoryCards.StudyMode.Users":
+            case "MemoryCards.StudyMode.SelectedCard":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.StudyMode");
-                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Users", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>");
-                xamlMember.Getter = get_9_StudyMode_Users;
-                xamlMember.Setter = set_9_StudyMode_Users;
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "SelectedCard", "MemoryCards.Card");
+                xamlMember.Getter = get_13_StudyMode_SelectedCard;
+                xamlMember.Setter = set_13_StudyMode_SelectedCard;
                 break;
-            case "MemoryCards.StudyMode.SelectedUser":
+            case "MemoryCards.StudyMode.CardsToShow":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.StudyMode");
-                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "SelectedUser", "MemoryCards.Card");
-                xamlMember.Getter = get_10_StudyMode_SelectedUser;
-                xamlMember.Setter = set_10_StudyMode_SelectedUser;
-                break;
-            case "MemoryCards.StudyMode.UsersToShow":
-                userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MemoryCards.StudyMode");
-                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "UsersToShow", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>");
-                xamlMember.Getter = get_11_StudyMode_UsersToShow;
-                xamlMember.Setter = set_11_StudyMode_UsersToShow;
+                xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "CardsToShow", "System.Collections.ObjectModel.ObservableCollection`1<MemoryCards.Card>");
+                xamlMember.Getter = get_14_StudyMode_CardsToShow;
+                xamlMember.Setter = set_14_StudyMode_CardsToShow;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_12_TreeViewNode_Children;
+                xamlMember.Getter = get_15_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_TreeViewNode_Content;
-                xamlMember.Setter = set_13_TreeViewNode_Content;
+                xamlMember.Getter = get_16_TreeViewNode_Content;
+                xamlMember.Setter = set_16_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_TreeViewNode_Depth;
+                xamlMember.Getter = get_17_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_18_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_16_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_16_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_19_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_19_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_17_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_20_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_20_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::MemoryCards.MemoryCards_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MemoryCards.MemoryCards_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_18_TreeViewNode_Parent;
+                xamlMember.Getter = get_21_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

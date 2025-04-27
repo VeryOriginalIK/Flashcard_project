@@ -7,7 +7,7 @@ using MemoryCards;
 
 namespace MemoryCards
 {
-    class User
+    public class User
     {
         private string password;
         public string name { get; private set; }
