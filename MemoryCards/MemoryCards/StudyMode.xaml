@@ -14,19 +14,17 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="4*"/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
-            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
-                
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
-                
-            </StackPanel>
-            <ListView DataContext="" ItemsSource="{Binding Cards}">
-                
-            </ListView>
+
+            <ListView x:Name="ListView" ItemsSource="{Binding Cards}"></ListView>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <TextBox x:Name="QuestionTextBox" Text="{Binding SelectedCard}" PlaceholderText="Kérdés"></TextBox>
+                <TextBox x:Name="AnswerTextBox" PlaceholderText="Válasz"></TextBox>
+                <StackPanel/>
         </Grid>
     </Grid>
 </Window>
