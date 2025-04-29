@@ -24,6 +24,9 @@
             <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                 
             </StackPanel>
+            <ListView DataContext="" ItemsSource="{Binding Cards}">
+                
+            </ListView>
         </Grid>
     </Grid>
 </Window>

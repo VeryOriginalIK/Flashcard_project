@@ -781,3 +781,7 @@ C:\Users\voros.bence\Source\Repos\VeryOriginalIK\Flashcard_project\MemoryCards\M
 C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Newtonsoft.Json.dll
 C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\users.json
 C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\cards.json
+C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CreateMode.g.i.cs
+C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CreateMode.g.cs
+C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CreateMode.xaml
+C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CreateMode.xbf
