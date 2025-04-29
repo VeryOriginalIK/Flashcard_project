@@ -20,11 +20,8 @@
         <Grid Grid.Column="1">
 
             <ListView x:Name="ListView" ItemsSource="{Binding Cards}"></ListView>
-
-            <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                <TextBox x:Name="QuestionTextBox" Text="{Binding SelectedCard}" PlaceholderText="Kérdés"></TextBox>
-                <TextBox x:Name="AnswerTextBox" PlaceholderText="Válasz"></TextBox>
-                <StackPanel/>
+            
+            <StackPanel Orientation="Horizontal" Grid.Row="3" x:Name="BTNs_Place" VerticalAlignment="Bottom" HorizontalAlignment="Center"><StackPanel/>
         </Grid>
     </Grid>
 </Window>

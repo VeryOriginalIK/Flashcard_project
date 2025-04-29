@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\studymode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\studymode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\studymode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\studymode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -41,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,39 +53,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MemoryCards\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml.cs",
               "RelativeToolTip": "MemoryCards\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAANkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAANIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T22:29:08.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T22:29:08.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StudyMode.xaml.cs",
               "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml.cs",
               "RelativeDocumentMoniker": "MemoryCards\\StudyMode.xaml.cs",
               "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml.cs",
               "RelativeToolTip": "MemoryCards\\StudyMode.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T20:31:09.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "StudyMode.xaml",
               "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml",
               "RelativeDocumentMoniker": "MemoryCards\\StudyMode.xaml",
               "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml",
               "RelativeToolTip": "MemoryCards\\StudyMode.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-19T12:07:12.746Z",
               "EditorCaption": ""
@@ -100,8 +99,7 @@
               "RelativeToolTip": "MemoryCards\\MainWindow.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-14T12:01:12.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T12:01:12.129Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "MemoryCards\\Card.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:30:03.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T12:30:03.285Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "MemoryCards\\passwordEncryption.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAowBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:04:34.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T12:04:34.206Z"
             },
             {
               "$type": "Document",
