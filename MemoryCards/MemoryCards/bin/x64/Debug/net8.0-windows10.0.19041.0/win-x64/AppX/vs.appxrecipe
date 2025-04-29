@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-27T12:30:11.693</Modified>
+      <Modified>2025-04-29T15:52:14.551</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-27T11:43:41.705</Modified>
+      <Modified>2025-04-29T15:52:14.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.runtimeconfig.json">
       <PackagePath>MemoryCards.runtimeconfig.json</PackagePath>
-      <Modified>2025-04-19T11:49:45.428</Modified>
+      <Modified>2025-04-29T15:46:50.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.dll">
       <PackagePath>MemoryCards.dll</PackagePath>
-      <Modified>2025-04-27T12:30:11.042</Modified>
+      <Modified>2025-04-29T15:52:13.842</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>MemoryCards.exe</PackagePath>
-      <Modified>2025-04-27T12:30:11.170</Modified>
+      <Modified>2025-04-29T15:52:13.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.15\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -891,35 +891,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MemoryCards.deps.json">
       <PackagePath>MemoryCards.deps.json</PackagePath>
-      <Modified>2025-04-19T12:08:20.153</Modified>
+      <Modified>2025-04-29T15:46:50.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.512</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.513</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.513</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.513</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.514</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.514</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2025-04-13T19:17:48.514</Modified>
+      <Modified>2025-04-28T06:16:00.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

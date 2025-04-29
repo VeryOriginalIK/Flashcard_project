@@ -18,10 +18,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
-    <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
-        <TextBox PlaceholderText="Felhasználónév"></TextBox>
-            <PasswordBox PlaceholderText="Jelszó"/>
-    </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
+                
+            </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                 
             </StackPanel>

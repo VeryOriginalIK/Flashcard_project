@@ -10,6 +10,7 @@
       "MemoryCards/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
+          "Microsoft.Web.WebView2": "1.0.2903.40",
           "Microsoft.Windows.SDK.BuildTools": "10.0.26100.1742",
           "Microsoft.WindowsAppSDK": "1.7.250401001",
           "Microsoft.Web.WebView2.Core.Projection": "1.0.2903.40",

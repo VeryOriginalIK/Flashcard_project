@@ -19,8 +19,8 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
     <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
-        <TextBox x:Name="Usrnm" PlaceholderText="Felhasználónév"></TextBox>
-            <PasswordBox x:Name="Pswrd" PlaceholderText="Jelszó"/>
+                <TextBox PlaceholderText="Felhasználónév" x:Name="Username"></TextBox>
+            <PasswordBox PlaceholderText="Jelszó" x:Name="Password"/>
                 <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                     <Button x:Name="login_BTN" Content="Bejelentkezés" Click="login_BTN_Click"/>
                     <Button x:Name="Registration_BTN" Content="Regisztráció" Click="Registration_BTN_Click"/>

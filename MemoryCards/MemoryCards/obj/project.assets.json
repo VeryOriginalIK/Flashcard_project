@@ -1521,6 +1521,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows10.0.19041": [
       "BCrypt.Net-Next >= 4.0.3",
+      "Microsoft.Web.WebView2 >= 1.0.2903.40",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.26100.1742",
       "Microsoft.WindowsAppSDK >= 1.7.250401001"
     ]
@@ -1579,6 +1580,10 @@
           "BCrypt.Net-Next": {
             "target": "Package",
             "version": "[4.0.3, )"
+          },
+          "Microsoft.Web.WebView2": {
+            "target": "Package",
+            "version": "[1.0.2903.40, )"
           },
           "Microsoft.Windows.SDK.BuildTools": {
             "target": "Package",
