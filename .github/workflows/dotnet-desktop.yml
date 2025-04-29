@@ -42,20 +42,22 @@ jobs:
     - name: Restore the application
       run: msbuild ${{ env.Solution_Name }} /t:Restore /p:Configuration=${{ matrix.configuration }}
 
-    - name: Decode the pfx
+    - name: Decode the PFX Certificate
+      if: secrets.Base64_Encoded_Pfx != ''
       run: |
         $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
         $certificatePath = Join-Path -Path $env:Wap_Project_Directory -ChildPath GitHubActionsWorkflow.pfx
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
     - name: Create the app package
-      run: msbuild ${{ env.Wap_Project_Path }} /p:Configuration=${{ matrix.configuration }} /p:UapAppxPackageBuildMode=${{ env.Appx_Package_Build_Mode }} /p:AppxBundle=${{ env.Appx_Bundle }} /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
+      run: msbuild ${{ env.Wap_Project_Path }} /p:Configuration=${{ matrix.configuration }} /p:UapAppxPackageBuildMode=${{ env.Appx_Package_Build_Mode }} /p:AppxBundle=${{ env.Appx_Bundle }} /p:AppxBundlePlatforms=${{ env.Appx_Bundle_Platforms }}
       env:
         Appx_Bundle: Always
         Appx_Bundle_Platforms: x86|x64
         Appx_Package_Build_Mode: StoreUpload
 
-    - name: Remove the pfx
+    - name: Remove the PFX Certificate
+      if: secrets.Base64_Encoded_Pfx != ''
       run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
 
     - name: Upload build artifacts
