@@ -1,3 +1,17 @@
+- name: Cache NuGet packages
+  uses: actions/cache@v3
+  with:
+    path: ~/.nuget/packages
+    key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+    restore-keys: |
+      ${{ runner.os }}-nuget-
+      
+- name: Build the solution
+  run: msbuild ${{ env.Solution_Name }} /p:Configuration=${{ matrix.configuration }}
+
+- name: Run Code Analysis
+  run: dotnet format --check
+  
 name: .NET Core Desktop
 
 on:
