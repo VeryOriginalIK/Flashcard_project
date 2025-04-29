@@ -37,6 +37,12 @@
     <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>MemoryCards.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\cards.json">
+      <PackagePath>cards.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\voros\source\repos\VeryOriginalIK\Flashcard_project\MemoryCards\MemoryCards\users.json">
+      <PackagePath>users.json</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.15\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
     </AppxPackagedFile>
@@ -651,6 +657,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\microsoft.windowsappsdk\1.7.250401001\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\newtonsoft.json\13.0.3\lib\net6.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\voros\.nuget\packages\microsoft.web.webview2\1.0.2903.40\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>

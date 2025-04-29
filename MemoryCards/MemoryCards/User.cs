@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MemoryCards;
+using Newtonsoft.Json;
 
 namespace MemoryCards
 {
     public class User
     {
-        private string password;
+        public string password { get; private set; }
         public string name { get; private set; }
         public List<int> cardIds { get; set; }
         public int points { get; set; }
@@ -17,9 +18,18 @@ namespace MemoryCards
         public User(string name, string password)
         {
             this.name = name;
-            this.password = (passwordEncryption.Encrypt(password));
-            this.cardIds = new List<int> {};
+            this.password = passwordEncryption.Encrypt(password);
+            this.cardIds = new List<int>();
             this.points = 0;
+        }
+
+        [JsonConstructor]
+        public User(string name, string password, List<int> cardIds, int points)
+        {
+            this.name = name;
+            this.password = password;
+            this.cardIds = cardIds;
+            this.points = points;
         }
 
         public User? Login(string password)

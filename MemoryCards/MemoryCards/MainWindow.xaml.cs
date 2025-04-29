@@ -5,6 +5,10 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using Windows.Security.Cryptography.Core;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace MemoryCards
 {
@@ -32,9 +36,9 @@ namespace MemoryCards
             set { usersToShow = value; OnPropertyChanged(nameof(UsersToShow)); }
         }
 
-        private void Study()
+        private void Study(List<int> Cards)
         {
-            StudyMode studyMode = new StudyMode();
+            StudyMode studyMode = new StudyMode(Cards);
             studyMode.Activate();
             this.Close();
         }
@@ -46,9 +50,23 @@ namespace MemoryCards
             this.Close();
         } */
 
+        private void ReadUsers()
+        {
+            try
+            {
+                string filePath = Path.Combine(AppContext.BaseDirectory, "users.json");
+                Users = JArray.Parse(File.ReadAllText(filePath)).ToObject<ObservableCollection<User>>();
+            }
+            catch
+            {
+                Users = new ObservableCollection<User>();
+            }
+        }
+
         public MainWindow()
         {
             this.InitializeComponent();
+            ReadUsers();
         }
 
         private void login_BTN_Click(object sender, RoutedEventArgs e)
@@ -66,7 +84,7 @@ namespace MemoryCards
                     XamlRoot = this.Content.XamlRoot
                 };
                 //loginUserDialog.PrimaryButtonClick += (sender, e) => Edit();
-                loginUserDialog.SecondaryButtonClick += (sender, e) => Study();
+                loginUserDialog.SecondaryButtonClick += (sender, e) => Study(user.cardIds);
                 _ = loginUserDialog.ShowAsync();
             }
             else
@@ -80,6 +98,7 @@ namespace MemoryCards
                 };
                 _ = WrongPasswordDialog.ShowAsync();
             }
+
         }
 
         private bool PasswordCheck()
@@ -119,7 +138,14 @@ namespace MemoryCards
                     else
                     {
                         Users.Add(newUser);
-                        login_BTN_Click(sender, e);
+                        ContentDialog registered = new ContentDialog
+                        {
+                            Title = "Sikeres regisztráció!",
+                            Content = $"Jelentkezz be!",
+                            CloseButtonText = "Ok",
+                            XamlRoot = this.Content.XamlRoot
+                        };
+                        _ = registered.ShowAsync();
                     }
                 }
                 else
@@ -146,5 +172,13 @@ namespace MemoryCards
                 _ = userTakenDialog.ShowAsync();
             }
         }
-    } 
+
+        public void SaveUsers(object sender, WindowEventArgs e)
+        {
+            string filePath = Path.Combine(AppContext.BaseDirectory, "users.json");
+            File.WriteAllText(filePath, JsonConvert.SerializeObject(Users));
+        }
+
+
     }
+}

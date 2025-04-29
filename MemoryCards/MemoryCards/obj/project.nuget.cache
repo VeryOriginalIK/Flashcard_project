@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MVzhNfN2HYU=",
+  "dgSpecHash": "6tF5C4mxUyc=",
   "success": true,
   "projectFilePath": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\voros\\.nuget\\packages\\microsoft.web.webview2\\1.0.2903.40\\microsoft.web.webview2.1.0.2903.40.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.26100.1742\\microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512",
     "C:\\Users\\voros\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250401001\\microsoft.windowsappsdk.1.7.250401001.nupkg.sha512",
+    "C:\\Users\\voros\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\voros\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.15\\microsoft.netcore.app.runtime.win-x86.8.0.15.nupkg.sha512",
     "C:\\Users\\voros\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512",
     "C:\\Users\\voros\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.15\\microsoft.aspnetcore.app.runtime.win-x86.8.0.15.nupkg.sha512",

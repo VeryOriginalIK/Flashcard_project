@@ -1,4 +1,5 @@
 using Microsoft.UI.Xaml;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
@@ -24,7 +25,7 @@ namespace MemoryCards
             set { cardsToShow = value; OnPropertyChanged(nameof(CardsToShow)); }
         }
 
-        public StudyMode()
+        public StudyMode(List<int> cardIDs)
         {
             this.InitializeComponent();
         }
