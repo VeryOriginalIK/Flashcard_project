@@ -1,4 +1,3 @@
-
 name: .NET Core Desktop
 
 on:
@@ -19,7 +18,7 @@ jobs:
 
     env:
       Solution_Name: MemoryCards.sln                         # Solution name
-      Test_Project_Path: MemoryCards.Tests\MemoryCards.Tests.csproj # Update if you have a test project
+      Test_Project_Path: MemoryCards.Tests\MemoryCards.Tests.csproj # Test project path
       Wap_Project_Directory: MemoryCards                     # WAP project directory relative to the solution
       Wap_Project_Path: MemoryCards\MemoryCards.wapproj      # WAP project path
 
