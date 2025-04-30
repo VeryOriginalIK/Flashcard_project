@@ -1,37 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\",
+  "WorkspaceRootPath": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\studymode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\studymode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\studymode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\studymode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\studymode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\studymode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\createform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\createform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\createmode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\createmode.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\createmode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\createmode.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\createform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\createform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\windows\\source\\repos\\flashcard_project\\memorycards\\memorycards\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\passwordencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\passwordencryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|c:\\users\\voros\\source\\repos\\veryoriginalik\\flashcard_project\\memorycards\\memorycards\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E331213-77E9-4085-AEE0-9AE1169C1539}|MemoryCards\\MemoryCards.csproj|solutionrelative:memorycards\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\voros.bence\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250401001\\buildTransitive\\Microsoft.WindowsAppSDK.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,12 +41,16 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 211,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -53,99 +58,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MemoryCards\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MemoryCards\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAANIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T22:29:08.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudyMode.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml.cs",
-              "RelativeDocumentMoniker": "MemoryCards\\StudyMode.xaml.cs",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml.cs",
-              "RelativeToolTip": "MemoryCards\\StudyMode.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T20:31:09.543Z",
+              "DocumentIndex": 1,
+              "Title": "StudyMode.xaml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml",
+              "RelativeDocumentMoniker": "MemoryCards\\StudyMode.xaml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml",
+              "RelativeToolTip": "MemoryCards\\StudyMode.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-30T21:23:04.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudyMode.xaml",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml",
-              "RelativeDocumentMoniker": "MemoryCards\\StudyMode.xaml",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\StudyMode.xaml",
-              "RelativeToolTip": "MemoryCards\\StudyMode.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-19T12:07:12.746Z"
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryCards\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MemoryCards\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T21:20:11.28Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MemoryCards\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml",
-              "RelativeToolTip": "MemoryCards\\MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-14T12:01:12.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\Card.cs",
-              "RelativeDocumentMoniker": "MemoryCards\\Card.cs",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\Card.cs",
-              "RelativeToolTip": "MemoryCards\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Title": "CreateMode.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateMode.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryCards\\CreateMode.xaml.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateMode.xaml.cs",
+              "RelativeToolTip": "MemoryCards\\CreateMode.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:30:03.285Z"
+              "WhenOpened": "2025-04-30T21:17:57.601Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "passwordEncryption.cs",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\passwordEncryption.cs",
-              "RelativeDocumentMoniker": "MemoryCards\\passwordEncryption.cs",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\passwordEncryption.cs",
-              "RelativeToolTip": "MemoryCards\\passwordEncryption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowBMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T12:04:34.206Z"
+              "Title": "CreateMode.xaml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateMode.xaml",
+              "RelativeDocumentMoniker": "MemoryCards\\CreateMode.xaml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateMode.xaml",
+              "RelativeToolTip": "MemoryCards\\CreateMode.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-30T21:17:54.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\User.cs",
-              "RelativeDocumentMoniker": "MemoryCards\\User.cs",
-              "ToolTip": "C:\\Users\\voros\\source\\repos\\VeryOriginalIK\\Flashcard_project\\MemoryCards\\MemoryCards\\User.cs",
-              "RelativeToolTip": "MemoryCards\\User.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACQAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateForm.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateForm.xaml.cs",
+              "RelativeDocumentMoniker": "MemoryCards\\CreateForm.xaml.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateForm.xaml.cs",
+              "RelativeToolTip": "MemoryCards\\CreateForm.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T11:52:06.335Z"
+              "WhenOpened": "2025-04-30T21:17:51.681Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Microsoft.WindowsAppSDK.targets",
-              "DocumentMoniker": "C:\\Users\\voros.bence\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250401001\\buildTransitive\\Microsoft.WindowsAppSDK.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\voros.bence\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250401001\\buildTransitive\\Microsoft.WindowsAppSDK.targets",
-              "ToolTip": "C:\\Users\\voros.bence\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250401001\\buildTransitive\\Microsoft.WindowsAppSDK.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\voros.bence\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250401001\\buildTransitive\\Microsoft.WindowsAppSDK.targets",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-04-28T06:20:52.657Z"
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-30T21:10:40.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MemoryCards\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MainWindow.xaml",
+              "RelativeToolTip": "MemoryCards\\MainWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-30T20:30:32.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateForm.xaml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateForm.xaml",
+              "RelativeDocumentMoniker": "MemoryCards\\CreateForm.xaml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\CreateForm.xaml",
+              "RelativeToolTip": "MemoryCards\\CreateForm.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-30T20:27:55.046Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 822,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
