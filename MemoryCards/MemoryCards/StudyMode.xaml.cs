@@ -10,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using Windows.System;
-using System.Media
+using System.Media;
 using Windows.UI;
 using Microsoft.UI.Xaml.Media;
 
