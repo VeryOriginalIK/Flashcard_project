@@ -5,76 +5,72 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using Windows.System;
+using System.Media
+using Windows.UI;
+using Microsoft.UI.Xaml.Media;
 
 namespace MemoryCards
 {
     public sealed partial class StudyMode : Window, INotifyPropertyChanged
     {
-        private ObservableCollection<Card> Cards { get; set; }
-        private List<int> CardIDs { get; set;}
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public ObservableCollection<Card>? Card { get; set; } = new ObservableCollection<Card>();
+        public ObservableCollection<Card>? Cards { get; set; }
         public Card SelectedCard { get; set; }
 
-        private ObservableCollection<Card> cardsToShow;
-
-        public ObservableCollection<Card> CardsToShow
-        {
-            get { return cardsToShow; }
-            set { cardsToShow = value; OnPropertyChanged(nameof(CardsToShow)); }
-        }
-
-        public StudyMode(List<int> cardIDs)
+        public StudyMode(ObservableCollection<Card> cards)
         {
             this.InitializeComponent();
-            CardIDs = cardIDs;
-            this.Cards = GetCards();
+            Cards = cards;
+            GenerateButtons();
         }
 
-        private ObservableCollection<Card> GetCards()
+        private void GenerateButtons()
         {
-            try
+            List<string> answers = new List<string>();
+            foreach (string answer in SelectedCard.FakeAnswers)
             {
-                string filePath = Path.Combine(AppContext.BaseDirectory, "cards.json");
-                var Cards = JArray.Parse(File.ReadAllText(filePath))
-                                     .ToObject<List<Card>>()
-                                     .Where(card => CardIDs.Contains(card.id))
-                                     .ToList();
-                return new ObservableCollection<Card>(Cards);
+                answers.Add(answer);
             }
-            catch
+            answers.Add(SelectedCard.Answer);
+            answers = answers.OrderBy(x => Guid.NewGuid()).ToList();
+            foreach (string answer in answers)
             {
-                ContentDialog NoCards = new ContentDialog
-                {
-                    Title = "Még nincsenek kártyák létrehozva!",
-                    Content = "No cards found for the selected user.",
-                    PrimaryButtonText = "Új kártyák hozzáadása",
-                    CloseButtonText = "Kilépés",
-                };
+                Button button = new Button();
+                button.Content = answer;
+                button.
+                button.Click += AnswerButton_Click(button, "", answer);
+                BTNs_Place.Children.Add(button);
+            }
+        }
 
-               /* NoCards.PrimaryButtonClick += (sender, e) =>
-                {
-                    Edi mainWindow = new MainWindow();
-                    EditMode.Activate();
-                    this.Close();
-                };*/
-                NoCards.CloseButtonClick += (sender, e) =>
-                {
-                    MainWindow mainWindow = new MainWindow();
-                    mainWindow.Activate();
-                    this.Close();
-                };
-                _ = NoCards.ShowAsync();
+        private void AnswerButton_Click(object sender, RoutedEventArgs e, string answer)
+        {
+            Button button = (Button)sender;
+            string answer = button.Content.ToString();
+            if (answer == sender.Answer)
+            {
+                SelectedCard.timesRead++;
+                SelectedCard.lastRead = DateTime.Now;
+                button.Background = Brushes.Green;
+                Cards[Cards.IndexOf(SelectedCard)] = SelectedCard;
+                // Show correct message
+            }
+            else
+            {
 
-                return new ObservableCollection<Card>();
+                SelectedCard.lastRead = DateTime.Now;
+                SelectedCard.timesRead++;
+
             }
         }
     }
