@@ -1,0 +1,16 @@
+{
+  "cards":[
+    {
+      "id": 0,
+      "content": "kérdés?",
+      "lastRead": DateTime.Now,
+      "timesRead": "0",
+      "answer": "36",
+      "type": 1,
+      "options":  ["", "", "", ""];
+
+    },
+
+  ]
+ 
+}

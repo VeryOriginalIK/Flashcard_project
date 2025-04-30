@@ -43,13 +43,13 @@ namespace MemoryCards
             this.Close();
         }
 
-        /* private void Edit()
+        private void Create()
         {
-            EditMode editMode = new EditMode();
-            editMode.Activate();
+            CreateMode createMode = new CreateMode();
+            createMode.Activate();
             this.Close();
-        } */
-
+        }
+        
         private void ReadUsers()
         {
             try
@@ -83,7 +83,7 @@ namespace MemoryCards
                     SecondaryButtonText = "Tanulás",
                     XamlRoot = this.Content.XamlRoot
                 };
-                //loginUserDialog.PrimaryButtonClick += (sender, e) => Edit();
+                loginUserDialog.PrimaryButtonClick += (sender, e) => Create();
                 loginUserDialog.SecondaryButtonClick += (sender, e) => Study(user.cardIds);
                 _ = loginUserDialog.ShowAsync();
             }

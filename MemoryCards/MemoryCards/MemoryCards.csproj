@@ -11,8 +11,10 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
+    <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="CreateForm.xaml" />
     <None Remove="CreateMode.xaml" />
   </ItemGroup>
 
@@ -49,6 +51,9 @@
     <None Update="cards.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Page Update="CreateForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="CreateMode.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
