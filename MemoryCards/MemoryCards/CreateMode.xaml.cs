@@ -21,6 +21,7 @@ namespace MemoryCards
     /// </summary>
     public sealed partial class CreateMode : Window, INotifyPropertyChanged
     {
+        private ObservableCollection<Card> Cards;
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string propertyName)
         {
@@ -29,42 +30,31 @@ namespace MemoryCards
 
         public CreateMode()
         {
-            this.InitializeComponent(); // This must come first
+            this.InitializeComponent();
             LoadCards();
-            // Then show another window
         }
 
-        public void LoadCards()
+        private void LoadCards()
         {
-            int cardCount = JsonConvert.DeserializeObject<CardList>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "cards.json"))).Cards.Count;
-            if (cardCount == 0)
+            try
             {
-                TextBlock tb = new TextBlock
-                {
-                    Text = "Nincsenek kártyáid. A létrehozott kártyáid késõbb itt fognak megjelenni.",
-                    FontSize = 16,
-                    Margin = new Thickness(10),
-                    HorizontalAlignment = HorizontalAlignment.Center
-                };
-                content_SP.Children.Add(tb);
-                
+                string filePath = Path.Combine(AppContext.BaseDirectory, "cards.json");
+                Cards = JArray.Parse(File.ReadAllText(filePath)).ToObject<ObservableCollection<Card>>();
             }
-            for (int i = 0; i < cardCount; i++)
+            catch
             {
-                TextBlock tb = new TextBlock
-                {
-                    Text = "Hello from code!",
-                    FontSize = 16,
-                    Margin = new Thickness(10),
-                    HorizontalAlignment = HorizontalAlignment.Center
-                };
+                Cards = new ObservableCollection<Card>();
             }
+        }
 
+        private void SaveCards()
+        {
+            string filePath = Path.Combine(AppContext.BaseDirectory, "cards.json");
+            File.WriteAllText(filePath, JsonConvert.SerializeObject(Cards));
         }
 
         private void EnterForm(object sender, RoutedEventArgs e)
         {
-            // Your code to handle the button click
             CreateForm createForm = new CreateForm(this);
             createForm.Activate();
         }

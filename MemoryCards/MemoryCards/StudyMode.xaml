@@ -27,6 +27,7 @@
             <ListView DataContext="" ItemsSource="{Binding Cards}">
                 
             </ListView>
+            <StackPanel x:Name="BTNs_Place" Orientation="Horizontal"></StackPanel>
         </Grid>
     </Grid>
 </Window>
