@@ -26,7 +26,7 @@ namespace MemoryCards
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public int cardCount { get; set; }
+
         public CreateMode()
         {
             this.InitializeComponent(); // This must come first
@@ -36,7 +36,7 @@ namespace MemoryCards
 
         public void LoadCards()
         {
-            cardCount = JsonConvert.DeserializeObject<CardList>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "cards.json"))).Cards.Count;
+            int cardCount = JsonConvert.DeserializeObject<CardList>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory, "cards.json"))).Cards.Count;
             if (cardCount == 0)
             {
                 TextBlock tb = new TextBlock
@@ -53,7 +53,7 @@ namespace MemoryCards
             {
                 TextBlock tb = new TextBlock
                 {
-                    Text = "Kártyabejegyzés",
+                    Text = "Hello from code!",
                     FontSize = 16,
                     Margin = new Thickness(10),
                     HorizontalAlignment = HorizontalAlignment.Center
@@ -65,7 +65,7 @@ namespace MemoryCards
         private void EnterForm(object sender, RoutedEventArgs e)
         {
             // Your code to handle the button click
-            CreateForm createForm = new CreateForm(this, cardCount);
+            CreateForm createForm = new CreateForm(this);
             createForm.Activate();
         }
     }

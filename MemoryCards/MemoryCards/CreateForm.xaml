@@ -27,7 +27,7 @@
         </StackPanel>
 
         <Grid Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="solution_GR">
-            <TextBox PlaceholderText="Megoldás" x:Name="solution_TXB" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <TextBox PlaceholderText="Megoldás" x:Name="solution_TXB" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </Grid>
         <Button x:Name="add_BTN" Grid.Row="3" Content="Kártya hozzáadása" FontSize="18" HorizontalAlignment="Center" Click="add_BTN_Click"/>
     </Grid>

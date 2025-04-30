@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows\\Source\\Repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj": {}
+    "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows\\Source\\Repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj": {
+    "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows\\Source\\Repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj",
+        "projectUniqueName": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj",
         "projectName": "MemoryCards",
-        "projectPath": "C:\\Users\\Windows\\Source\\Repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj",
+        "projectPath": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\MemoryCards.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows\\Source\\Repos\\Flashcard_project\\MemoryCards\\MemoryCards\\obj\\",
+        "outputPath": "C:\\Users\\Windows\\source\\repos\\Flashcard_project\\MemoryCards\\MemoryCards\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

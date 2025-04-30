@@ -1,1 +1,0 @@
-C:\Users\Windows\Source\Repos\Flashcard_project\MemoryCards\MemoryCards\MemoryCards.csproj;x64

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
+using System.Threading;
 
 namespace MemoryCards
 {
@@ -36,20 +37,20 @@ namespace MemoryCards
             set { usersToShow = value; OnPropertyChanged(nameof(UsersToShow)); }
         }
 
-        private void Study(List<int> Cards)
+        private void Study(List<int> cardIDs)
         {
-            StudyMode studyMode = new StudyMode(Cards);
+            StudyMode studyMode = new StudyMode(GetCards(cardIDs));
             studyMode.Activate();
             this.Close();
         }
 
-        private void Create()
+        /* private void Edit()
         {
             CreateMode createMode = new CreateMode();
             createMode.Activate();
             this.Close();
-        }
-        
+        } */
+
         private void ReadUsers()
         {
             try
@@ -83,7 +84,7 @@ namespace MemoryCards
                     SecondaryButtonText = "Tanulás",
                     XamlRoot = this.Content.XamlRoot
                 };
-                loginUserDialog.PrimaryButtonClick += (sender, e) => Create();
+                //loginUserDialog.PrimaryButtonClick += (sender, e) => Edit();
                 loginUserDialog.SecondaryButtonClick += (sender, e) => Study(user.cardIds);
                 _ = loginUserDialog.ShowAsync();
             }
@@ -94,7 +95,6 @@ namespace MemoryCards
                     Title = "Helytelen jelszó",
                     Content = "A felhasználónév, vagy a jelszó nem egyezik!\nKérem, próbálja újra!",
                     CloseButtonText = "Ok",
-                    XamlRoot = this.Content.XamlRoot
                 };
                 _ = WrongPasswordDialog.ShowAsync();
             }
@@ -120,7 +120,7 @@ namespace MemoryCards
         private void Registration_BTN_Click(object sender, RoutedEventArgs e)
         {
             User newUser = new User(Username.Text.ToString(), Password.Password);
-            if (!Users.Any(x => x.name.ToLower() == Username.ToString().ToLower()))
+            if (!Users.Any(x => x.name.ToLower() == Username.Text.ToString().ToLower()))
             {
                 if (PasswordCheck())
                 {
@@ -170,6 +170,51 @@ namespace MemoryCards
                     XamlRoot = this.Content.XamlRoot
                 };
                 _ = userTakenDialog.ShowAsync();
+            }
+        }
+
+        private ObservableCollection<Card> GetCards(List<int> CardIDs)
+        {
+            
+            try
+            {
+                string filePath = Path.Combine(AppContext.BaseDirectory, "cards.json");
+                var Cards = JArray.Parse(File.ReadAllText(filePath))
+                                     .ToObject<List<Card>>()
+                                     .Where(card => CardIDs.Contains(card.id))
+                                     .ToList();
+                return new ObservableCollection<Card>(Cards);
+            }
+            catch
+            {
+                /*ContentDialog NoCards = new ContentDialog
+                {
+                    Title = "Még nincsenek kártyák létrehozva!",
+                    Content = "Mit szeretnél csinálni?",
+                    PrimaryButtonText = "Új kártyák hozzáadása",
+                    CloseButtonText = "Kilépés",
+                };
+                
+                NoCards.PrimaryButtonClick += (sender, e) =>
+                {
+
+                    CreateMode createMode = new CreateMode();
+                    createMode.Activate();
+                    this.Close();
+                };
+
+                NoCards.CloseButtonClick += (sender, e) =>
+                {
+
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Activate();
+                    this.Close();
+                };
+
+                NoCards.XamlRoot = this.Content.XamlRoot;
+                _ = NoCards.ShowAsync();*/
+
+                return new ObservableCollection<Card>();
             }
         }
 
