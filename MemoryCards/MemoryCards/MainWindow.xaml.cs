@@ -16,8 +16,8 @@ namespace MemoryCards
     public sealed partial class MainWindow : Window, INotifyPropertyChanged
     {
         /*Login page basically.
-        A Study mode sorolja fel a kártyákat és editel. Megkapja a loginolt user kártyáit.
-        Meg Regisztrálni tud új felhasználókat.
+        A Study mode sorolja fel a kï¿½rtyï¿½kat ï¿½s editel. Megkapja a loginolt user kï¿½rtyï¿½it.
+        Meg Regisztrï¿½lni tud ï¿½j felhasznï¿½lï¿½kat.
          */
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -44,12 +44,12 @@ namespace MemoryCards
             this.Close();
         }
 
-        /* private void Edit()
+         private void Create()
         {
             CreateMode createMode = new CreateMode();
             createMode.Activate();
             this.Close();
-        } */
+        } 
 
         private void ReadUsers()
         {
@@ -78,22 +78,24 @@ namespace MemoryCards
             {
                 ContentDialog loginUserDialog = new ContentDialog
                 {
-                    Title = "Módválasztó",
-                    Content = "Mit szeretne csinálni?",
-                    PrimaryButtonText = "Kártyák szerkesztése",
-                    SecondaryButtonText = "Tanulás",
+                    Title = "Mï¿½dvï¿½lasztï¿½",
+                    Content = "Mit szeretne csinï¿½lni?",
+                    PrimaryButtonText = "Kï¿½rtyï¿½k szerkesztï¿½se",
+                    SecondaryButtonText = "Tanulï¿½s",
                     XamlRoot = this.Content.XamlRoot
                 };
-                //loginUserDialog.PrimaryButtonClick += (sender, e) => Edit();
-                loginUserDialog.SecondaryButtonClick += (sender, e) => Study(user.cardIds);
+
+                loginUserDialog.PrimaryButtonClick += (sender, e) => {Create(); };
+                loginUserDialog.SecondaryButtonClick += (sender, e) => {Study(user.cardIds);};
+
                 _ = loginUserDialog.ShowAsync();
             }
             else
             {
                 ContentDialog WrongPasswordDialog = new ContentDialog
                 {
-                    Title = "Helytelen jelszó",
-                    Content = "A felhasználónév, vagy a jelszó nem egyezik!\nKérem, próbálja újra!",
+                    Title = "Helytelen jelszï¿½",
+                    Content = "A felhasznï¿½lï¿½nï¿½v, vagy a jelszï¿½ nem egyezik!\nKï¿½rem, prï¿½bï¿½lja ï¿½jra!",
                     CloseButtonText = "Ok",
                 };
                 _ = WrongPasswordDialog.ShowAsync();
@@ -128,8 +130,8 @@ namespace MemoryCards
                     {
                         ContentDialog usernameDialog = new ContentDialog
                         {
-                            Title = "Hibás felhasználónév",
-                            Content = $"A felhasználónév legalább 3 karakter hosszúnak kell lennie!",
+                            Title = "Hibï¿½s felhasznï¿½lï¿½nï¿½v",
+                            Content = $"A felhasznï¿½lï¿½nï¿½v legalï¿½bb 3 karakter hosszï¿½nak kell lennie!",
                             CloseButtonText = "Ok",
                             XamlRoot = this.Content.XamlRoot
                         };
@@ -140,7 +142,7 @@ namespace MemoryCards
                         Users.Add(newUser);
                         ContentDialog registered = new ContentDialog
                         {
-                            Title = "Sikeres regisztráció!",
+                            Title = "Sikeres regisztrï¿½ciï¿½!",
                             Content = $"Jelentkezz be!",
                             CloseButtonText = "Ok",
                             XamlRoot = this.Content.XamlRoot
@@ -152,8 +154,8 @@ namespace MemoryCards
                 {
                     ContentDialog passwordDialog = new ContentDialog
                     {
-                        Title = "Hibás jelszó",
-                        Content = $"A jelszónak legalább 5 karakter hosszúnak kell lennie és tartalmaznia kell számot is!",
+                        Title = "Hibï¿½s jelszï¿½",
+                        Content = $"A jelszï¿½nak legalï¿½bb 5 karakter hosszï¿½nak kell lennie ï¿½s tartalmaznia kell szï¿½mot is!",
                         CloseButtonText = "Ok",
                         XamlRoot = this.Content.XamlRoot
                     };
@@ -164,8 +166,8 @@ namespace MemoryCards
             {
                 ContentDialog userTakenDialog = new ContentDialog
                 {
-                    Title = "A felhasználónév foglalt",
-                    Content = "Kérem, válasszon másikat!",
+                    Title = "A felhasznï¿½lï¿½nï¿½v foglalt",
+                    Content = "Kï¿½rem, vï¿½lasszon mï¿½sikat!",
                     CloseButtonText = "Ok",
                     XamlRoot = this.Content.XamlRoot
                 };
@@ -189,10 +191,10 @@ namespace MemoryCards
             {
                 /*ContentDialog NoCards = new ContentDialog
                 {
-                    Title = "Még nincsenek kártyák létrehozva!",
-                    Content = "Mit szeretnél csinálni?",
-                    PrimaryButtonText = "Új kártyák hozzáadása",
-                    CloseButtonText = "Kilépés",
+                    Title = "Mï¿½g nincsenek kï¿½rtyï¿½k lï¿½trehozva!",
+                    Content = "Mit szeretnï¿½l csinï¿½lni?",
+                    PrimaryButtonText = "ï¿½j kï¿½rtyï¿½k hozzï¿½adï¿½sa",
+                    CloseButtonText = "Kilï¿½pï¿½s",
                 };
                 
                 NoCards.PrimaryButtonClick += (sender, e) =>
