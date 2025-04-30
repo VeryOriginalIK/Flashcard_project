@@ -7,9 +7,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Title="CreateMode">
+    Title="Kártyák szerkesztése">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="create_BTN" Content="Új kártya létrehozása" HorizontalAlignment="Center" Grid.Row="0" FontSize="18" Click="EnterForm"/>
+        <StackPanel x:Name="content_SP" Grid.Row="1"/>
     </Grid>
 </Window>

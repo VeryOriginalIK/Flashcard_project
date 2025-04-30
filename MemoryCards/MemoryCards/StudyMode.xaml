@@ -14,14 +14,19 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
-
-            <ListView x:Name="ListView" ItemsSource="{Binding Cards}"></ListView>
-            
-            <StackPanel Orientation="Horizontal" Grid.Row="3" x:Name="BTNs_Place" VerticalAlignment="Bottom" HorizontalAlignment="Center"><StackPanel/>
+            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+                
+            </StackPanel>
+            <ListView DataContext="" ItemsSource="{Binding Cards}">
+                
+            </ListView>
         </Grid>
     </Grid>
 </Window>

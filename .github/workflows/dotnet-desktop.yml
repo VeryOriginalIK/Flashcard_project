@@ -1,3 +1,4 @@
+
 name: .NET Core Desktop
 
 on:
@@ -18,7 +19,7 @@ jobs:
 
     env:
       Solution_Name: MemoryCards.sln                         # Solution name
-      Test_Project_Path: MemoryCards.Tests\MemoryCards.Tests.csproj # Corrected test project path
+      Test_Project_Path: MemoryCards.Tests\MemoryCards.Tests.csproj # Update if you have a test project
       Wap_Project_Directory: MemoryCards                     # WAP project directory relative to the solution
       Wap_Project_Path: MemoryCards\MemoryCards.wapproj      # WAP project path
 
@@ -28,14 +29,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Cache NuGet packages
-      uses: actions/cache@v3
-      with:
-        path: ~/.nuget/packages
-        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/*.sln') }}
-        restore-keys: |
-          ${{ runner.os }}-nuget-
-
     - name: Install .NET Core
       uses: actions/setup-dotnet@v4
       with:
@@ -44,35 +37,26 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v2
 
-    - name: Restore NuGet packages
-      run: dotnet restore ${{ env.Solution_Name }}
-
-    - name: Build the solution
-      run: msbuild ${{ env.Solution_Name }} /p:Configuration=${{ matrix.configuration }}
-
     - name: Execute unit tests
-      run: dotnet test ${{ env.Test_Project_Path }} --logger "trx;LogFileName=test_results.trx"
-      timeout-minutes: 10
+      run: dotnet test ${{ env.Test_Project_Path }}
 
-    - name: Run Code Analysis
-      run: dotnet format --check
+    - name: Restore the application
+      run: msbuild ${{ env.Solution_Name }} /t:Restore /p:Configuration=${{ matrix.configuration }}
 
-    - name: Decode the PFX Certificate
-      if: secrets.Base64_Encoded_Pfx != ''
+    - name: Decode the pfx
       run: |
         $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
         $certificatePath = Join-Path -Path $env:Wap_Project_Directory -ChildPath GitHubActionsWorkflow.pfx
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
     - name: Create the app package
-      run: msbuild ${{ env.Wap_Project_Path }} /p:Configuration=${{ matrix.configuration }} /p:UapAppxPackageBuildMode=${{ env.Appx_Package_Build_Mode }} /p:AppxBundle=${{ env.Appx_Bundle }} /p:AppxBundlePlatforms=${{ env.Appx_Bundle_Platforms }}
+      run: msbuild ${{ env.Wap_Project_Path }} /p:Configuration=${{ matrix.configuration }} /p:UapAppxPackageBuildMode=${{ env.Appx_Package_Build_Mode }} /p:AppxBundle=${{ env.Appx_Bundle }} /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
       env:
         Appx_Bundle: Always
         Appx_Bundle_Platforms: x86|x64
         Appx_Package_Build_Mode: StoreUpload
 
-    - name: Remove the PFX Certificate
-      if: secrets.Base64_Encoded_Pfx != ''
+    - name: Remove the pfx
       run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
 
     - name: Upload build artifacts

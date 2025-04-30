@@ -24,5 +24,9 @@ namespace MemoryCards
             this.answer = answer;
         }
     }
+    public class CardList
+    {
+        public List<Card> Cards { get; set; }
+    }
 
 }

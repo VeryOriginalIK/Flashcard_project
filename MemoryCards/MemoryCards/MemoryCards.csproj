@@ -11,8 +11,10 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
+    <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="CreateForm.xaml" />
     <None Remove="CreateMode.xaml" />
   </ItemGroup>
 
@@ -40,20 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3179.45" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250401001" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="runtime.any.System.Runtime" Version="4.3.1" />
-    <PackageReference Include="runtime.any.System.Threading.Tasks" Version="4.3.0" />
-    <PackageReference Include="System.Reactive.Windows.Threading" Version="6.0.1" />
-    <PackageReference Include="System.Threading" Version="4.3.0" />
-    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <None Update="cards.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Page Update="CreateForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="CreateMode.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
