@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using BCrypt.Net;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MemoryCards
+﻿namespace MemoryCards
 {
     public static class passwordEncryption
     {

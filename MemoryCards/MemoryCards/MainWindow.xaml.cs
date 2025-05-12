@@ -1,15 +1,12 @@
-using Microsoft.UI.Xaml;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
-using Microsoft.UI.Xaml.Controls;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using Windows.Security.Cryptography.Core;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.IO;
-using System.Threading;
+using System.Linq;
+using System.Windows;
 
 namespace MemoryCards
 {
@@ -44,12 +41,12 @@ namespace MemoryCards
             this.Close();
         }
 
-         private void Create()
+        private void Create()
         {
             CreateMode createMode = new CreateMode();
             createMode.Activate();
             this.Close();
-        } 
+        }
 
         private void ReadUsers()
         {
@@ -76,31 +73,29 @@ namespace MemoryCards
 
             if (user != null && user.Login(Password.Password) != null)
             {
-                ContentDialog loginUserDialog = new ContentDialog
+                var result = MessageBox.Show(
+                    "Mit szeretne csinálni?",
+                    "Módrválasztó",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
                 {
-                    Title = "M�dv�laszt�",
-                    Content = "Mit szeretne csin�lni?",
-                    PrimaryButtonText = "K�rty�k szerkeszt�se",
-                    SecondaryButtonText = "Tanul�s",
-                    XamlRoot = this.Content.XamlRoot
-                };
-
-                loginUserDialog.PrimaryButtonClick += (sender, e) => {Create(); };
-                loginUserDialog.SecondaryButtonClick += (sender, e) => {Study(user.cardIds);};
-
-                _ = loginUserDialog.ShowAsync();
+                    Create();
+                }
+                else if (result == MessageBoxResult.No)
+                {
+                    Study(user.cardIds);
+                }
             }
             else
             {
-                ContentDialog WrongPasswordDialog = new ContentDialog
-                {
-                    Title = "Helytelen jelsz�",
-                    Content = "A felhaszn�l�n�v, vagy a jelsz� nem egyezik!\nK�rem, pr�b�lja �jra!",
-                    CloseButtonText = "Ok",
-                };
-                _ = WrongPasswordDialog.ShowAsync();
+                MessageBox.Show(
+                    "A felhasználónév, vagy a jelszó nem egyezik!\nKérem, próbálja újra!",
+                    "Helytelen jelszó",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
             }
-
         }
 
         private bool PasswordCheck()
@@ -128,56 +123,44 @@ namespace MemoryCards
                 {
                     if (!UsernameCheck())
                     {
-                        ContentDialog usernameDialog = new ContentDialog
-                        {
-                            Title = "Hib�s felhaszn�l�n�v",
-                            Content = $"A felhaszn�l�n�v legal�bb 3 karakter hossz�nak kell lennie!",
-                            CloseButtonText = "Ok",
-                            XamlRoot = this.Content.XamlRoot
-                        };
-                        _ = usernameDialog.ShowAsync();
+                        MessageBox.Show(
+                            "A felhasználónév legalább 3 karakter hosszúnak kell lennie!",
+                            "Hibás felhasználónév",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Warning);
                     }
                     else
                     {
                         Users.Add(newUser);
-                        ContentDialog registered = new ContentDialog
-                        {
-                            Title = "Sikeres regisztr�ci�!",
-                            Content = $"Jelentkezz be!",
-                            CloseButtonText = "Ok",
-                            XamlRoot = this.Content.XamlRoot
-                        };
-                        _ = registered.ShowAsync();
+                        MessageBox.Show(
+                            "Jelentkezz be!",
+                            "Sikeres regisztráció!",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
                     }
                 }
                 else
                 {
-                    ContentDialog passwordDialog = new ContentDialog
-                    {
-                        Title = "Hib�s jelsz�",
-                        Content = $"A jelsz�nak legal�bb 5 karakter hossz�nak kell lennie �s tartalmaznia kell sz�mot is!",
-                        CloseButtonText = "Ok",
-                        XamlRoot = this.Content.XamlRoot
-                    };
-                    _ = passwordDialog.ShowAsync();
+                    MessageBox.Show(
+                        "A jelszónak legalább 5 karakter hosszúnak kell lennie és tartalmaznia kell számot is!",
+                        "Hibás jelszó",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning);
                 }
             }
             else
             {
-                ContentDialog userTakenDialog = new ContentDialog
-                {
-                    Title = "A felhaszn�l�n�v foglalt",
-                    Content = "K�rem, v�lasszon m�sikat!",
-                    CloseButtonText = "Ok",
-                    XamlRoot = this.Content.XamlRoot
-                };
-                _ = userTakenDialog.ShowAsync();
+                MessageBox.Show(
+                    "Kérem, válasszon másikat!",
+                    "A felhasználónév foglalt",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
             }
         }
 
         private ObservableCollection<Card> GetCards(List<int> CardIDs)
         {
-            
+
             try
             {
                 string filePath = Path.Combine(AppContext.BaseDirectory, "cards.json");
@@ -220,7 +203,7 @@ namespace MemoryCards
             }
         }
 
-        public void SaveUsers(object sender, WindowEventArgs e)
+        public void SaveUsers(object sender, EventArgs e)
         {
             string filePath = Path.Combine(AppContext.BaseDirectory, "users.json");
             File.WriteAllText(filePath, JsonConvert.SerializeObject(Users));

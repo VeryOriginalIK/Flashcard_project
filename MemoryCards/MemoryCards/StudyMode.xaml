@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="MemoryCards.StudyMode"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -18,14 +18,14 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
-            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Padding="10">
-                
+            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top" Margin="10">
+
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
-                
+
             </StackPanel>
             <ListView DataContext="" ItemsSource="{Binding Cards}">
-                
+
             </ListView>
             <StackPanel x:Name="BTNs_Place" Orientation="Horizontal"></StackPanel>
         </Grid>

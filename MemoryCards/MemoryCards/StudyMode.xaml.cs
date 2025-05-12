@@ -1,18 +1,11 @@
-using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Threading;
-using Windows.System;
-using System.Media;
-using Windows.UI;
-using Microsoft.UI.Xaml.Media;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace MemoryCards
 {
@@ -37,18 +30,16 @@ namespace MemoryCards
         private void GenerateButtons()
         {
             List<string> answers = new List<string>();
-            foreach (string answer in SelectedCard.FakeAnswers)
+            foreach (string answer in SelectedCard.options)
             {
                 answers.Add(answer);
             }
-            answers.Add(SelectedCard.Answer);
             answers = answers.OrderBy(x => Guid.NewGuid()).ToList();
             foreach (string answer in answers)
             {
                 Button button = new Button();
                 button.Content = answer;
-                button.
-                button.Click += AnswerButton_Click(button, "", answer);
+                button.Click += (s, e) => AnswerButton_Click(s, e, answer);
                 BTNs_Place.Children.Add(button);
             }
         }
@@ -56,18 +47,17 @@ namespace MemoryCards
         private void AnswerButton_Click(object sender, RoutedEventArgs e, string answer)
         {
             Button button = (Button)sender;
-            string answer = button.Content.ToString();
-            if (answer == sender.Answer)
+            string choice = button.Content.ToString();
+            if (choice == SelectedCard.answer)
             {
                 SelectedCard.timesRead++;
                 SelectedCard.lastRead = DateTime.Now;
                 button.Background = Brushes.Green;
                 Cards[Cards.IndexOf(SelectedCard)] = SelectedCard;
-                // Show correct message
+                MessageBox.Show("Helyes válasz!", "Answer", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-
                 SelectedCard.lastRead = DateTime.Now;
                 SelectedCard.timesRead++;
 

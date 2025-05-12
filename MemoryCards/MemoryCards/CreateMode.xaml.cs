@@ -1,17 +1,10 @@
-using Microsoft.UI.Xaml;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
-using Microsoft.UI.Xaml.Controls;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using Windows.Security.Cryptography.Core;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.IO;
-using System.Diagnostics;
 using System.Windows;
-using System.Reflection.Emit;
 
 
 namespace MemoryCards
@@ -34,7 +27,7 @@ namespace MemoryCards
             LoadCards();
         }
 
-        private void LoadCards()
+        public void LoadCards()
         {
             try
             {

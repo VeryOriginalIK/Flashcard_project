@@ -1,18 +1,5 @@
-using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using static System.Net.Mime.MediaTypeNames;
+ï»¿using System.Windows;
+using System.Windows.Controls;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -36,11 +23,11 @@ namespace MemoryCards
         private void soltype_CBX_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             solution_GR.Children.Clear();
-            if(soltype_CBX.SelectedIndex == 1)
+            if (soltype_CBX.SelectedIndex == 1)
             {
 
                 int tbWidth = 315;
-                for(int i = 0; i < 4; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     RadioButton radioButton = new RadioButton
                     {
@@ -52,10 +39,10 @@ namespace MemoryCards
                     };
                     TextBox option_TXB = new TextBox
                     {
-                        PlaceholderText = $"{i + 1}. opció",
+                        Text = $"{i + 1}. opciÃ³",
                         FontSize = 16,
                         Margin = new Thickness(40 + i * tbWidth, 0, 0, 0),
-                        Width = tbWidth-40,
+                        Width = tbWidth - 40,
                         HorizontalAlignment = HorizontalAlignment.Left
 
                     };
@@ -64,7 +51,7 @@ namespace MemoryCards
 
                 }
             }
-            else if(soltype_CBX.SelectedIndex == 2)
+            else if (soltype_CBX.SelectedIndex == 2)
             {
                 RadioButton rbTrue = new RadioButton
                 {
@@ -81,14 +68,9 @@ namespace MemoryCards
             }
             else
             {
-                TextBox text = new TextBox
-                {
-                    PlaceholderText = "Megoldás",
-                    FontSize = 16,
-                    VerticalAlignment = VerticalAlignment.Stretch,
-                    HorizontalAlignment = HorizontalAlignment.Stretch
-                };
-                solution_GR.Children.Add (text);
+                //TextBox text = new TextBox
+                MessageBox.Show("MegoldÃ¡s", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                //solution_GR.Children.Add(text);
             }
         }
 

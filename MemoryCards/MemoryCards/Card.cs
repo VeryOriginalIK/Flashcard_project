@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace MemoryCards
@@ -26,7 +23,7 @@ namespace MemoryCards
             this.timesRead = 0;
             this.answer = answer;
             this.type = type;
-            this.options = [options[0], options[1], options[2], options[3]];
+            this.options = new string[4];
         }
     }
     public class CardList
